@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>الإعدادات - ITQAN POS</title>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- Sidebar -->
+  <aside id="sidebar">
+    <div class="logo"><h1>ITQAN POS</h1></div>
+    <nav>
+      <ul>
+        <li data-page="dashboard">لوحة التحكم</li>
+        <li data-page="pos">نقطة البيع</li>
+        <li data-page="products">الأصناف</li>
+        <li data-page="customers">العملاء</li>
+        <li data-page="suppliers">الموردين</li>
+        <li data-page="purchases">المشتريات</li>
+        <li data-page="expenses">المصروفات</li>
+        <li data-page="reports">التقارير</li>
+        <li class="active" data-page="settings">الإعدادات</li>
+        <li id="logout">تسجيل الخروج</li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Content -->
+  <main id="content">
+    <div class="fade-in">
+
+      <h2>إعدادات النظام</h2>
+
+      <!-- Currency & Language -->
+      <div class="card">
+        <div class="card-header">العملة واللغة</div>
+        <form id="currency-language-form">
+          <div class="form-group">
+            <label>العملة</label>
+            <input type="text" id="currency" value="جنيه" required>
+          </div>
+          <div class="form-group">
+            <label>اللغة</label>
+            <select id="language">
+              <option value="ar" selected>العربية</option>
+              <option value="en">English</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">حفظ</button>
+          <p id="settings-message"></p>
+        </form>
+      </div>
+
+      <!-- Users & Branches -->
+      <div class="card">
+        <div class="card-header">المستخدمين والفروع</div>
+        <form id="users-branches-form">
+          <div class="form-group">
+            <label>إضافة مستخدم</label>
+            <input type="text" id="user-name" placeholder="اسم المستخدم" required>
+          </div>
+          <div class="form-group">
+            <label>إضافة فرع</label>
+            <input type="text" id="branch-name" placeholder="اسم الفرع" required>
+          </div>
+          <button type="submit" class="btn btn-secondary">حفظ</button>
+          <p id="users-branches-message"></p>
+        </form>
+      </div>
+
+    </div>
+  </main>
+</div>
+
+<script type="module" src="js/settings.js"></script>
+</body>
+</html>
