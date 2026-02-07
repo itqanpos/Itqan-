@@ -1,0 +1,61 @@
+/* =====================================
+   ITQAN POS - CSS VARIABLES
+   File: variables.css
+   Dark Theme System
+   ===================================== */
+
+:root {
+
+  /* ===== Colors ===== */
+  --color-bg-primary: #020617;
+  --color-bg-secondary: #020617;
+  --color-bg-surface: #0f172a;
+  --color-bg-elevated: #020617;
+
+  --color-border: #1e293b;
+
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #cbd5f5;
+  --color-text-muted: #94a3b8;
+
+  --color-accent: #38bdf8;
+  --color-accent-hover: #0ea5e9;
+  --color-danger: #ef4444;
+  --color-success: #22c55e;
+  --color-warning: #facc15;
+
+  /* ===== Typography ===== */
+  --font-main: 'Cairo', sans-serif;
+
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 28px;
+
+  /* ===== Spacing ===== */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+
+  /* ===== Radius ===== */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  /* ===== Shadow ===== */
+  --shadow-sm: 0 2px 6px rgba(0,0,0,0.3);
+  --shadow-md: 0 6px 16px rgba(0,0,0,0.35);
+  --shadow-lg: 0 12px 30px rgba(0,0,0,0.45);
+
+  /* ===== Transitions ===== */
+  --transition-fast: 0.2s ease-in-out;
+  --transition-normal: 0.35s ease-in-out;
+  --transition-slow: 0.5s ease-in-out;
+
+  /* ===== Layout ===== */
+  --sidebar-width: 260px;
+  --header-height: 64px;
+}
