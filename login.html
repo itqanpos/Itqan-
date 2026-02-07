@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تسجيل الدخول - ITQAN POS</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<div id="login-container" class="fade-in" style="display:flex; justify-content:center; align-items:center; height:100vh; background:var(--color-bg-primary);">
+  <div class="card" style="width:360px;">
+    <h2 style="text-align:center; color:var(--color-accent); margin-bottom: var(--space-lg);">تسجيل الدخول</h2>
+
+    <form id="login-form">
+      <div class="form-group">
+        <label for="email">البريد الإلكتروني</label>
+        <input type="email" id="email" placeholder="example@domain.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">كلمة المرور</label>
+        <input type="password" id="password" placeholder="********" required>
+      </div>
+
+      <button type="submit" class="btn btn-primary" id="login-btn">تسجيل الدخول</button>
+      <p id="login-message" style="margin-top: var(--space-md); text-align:center;"></p>
+    </form>
+
+  </div>
+</div>
+
+<script type="module" src="js/login.js"></script>
+</body>
+</html>
