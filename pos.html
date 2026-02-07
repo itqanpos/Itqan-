@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>نقطة البيع - ITQAN POS</title>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<div id="pos-app" class="fade-in">
+
+  <header>
+    <h2>نقطة البيع</h2>
+    <div id="pos-total">الإجمالي: 0 جنيه</div>
+  </header>
+
+  <main>
+    <div id="product-list" class="grid"></div>
+    <div id="cart" class="card">
+      <h3>عربة التسوق</h3>
+      <ul id="cart-items"></ul>
+      <div class="cart-footer">
+        <strong>الإجمالي: <span id="cart-total">0</span> جنيه</strong>
+        <button id="checkout" class="btn btn-primary">دفع</button>
+      </div>
+    </div>
+  </main>
+
+</div>
+
+<script type="module" src="js/pos.js"></script>
+</body>
+</html>
