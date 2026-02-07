@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>المصروفات - ITQAN POS</title>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- Sidebar -->
+  <aside id="sidebar">
+    <div class="logo"><h1>ITQAN POS</h1></div>
+    <nav>
+      <ul>
+        <li data-page="dashboard">لوحة التحكم</li>
+        <li data-page="pos">نقطة البيع</li>
+        <li data-page="products">الأصناف</li>
+        <li data-page="customers">العملاء</li>
+        <li data-page="suppliers">الموردين</li>
+        <li data-page="purchases">المشتريات</li>
+        <li class="active" data-page="expenses">المصروفات</li>
+        <li data-page="reports">التقارير</li>
+        <li data-page="settings">الإعدادات</li>
+        <li id="logout">تسجيل الخروج</li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Content -->
+  <main id="content">
+    <div class="fade-in">
+
+      <h2>المصروفات والخزنة</h2>
+
+      <!-- Add Expense -->
+      <div class="card">
+        <div class="card-header">إضافة مصروف</div>
+
+        <form id="add-expense-form">
+          <div class="form-group">
+            <label>الوصف</label>
+            <input type="text" id="expense-title" required>
+          </div>
+
+          <div class="form-group">
+            <label>التصنيف</label>
+            <select id="expense-category">
+              <option>إيجار</option>
+              <option>كهرباء</option>
+              <option>مياه</option>
+              <option>نقل</option>
+              <option>أخرى</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>المبلغ</label>
+            <input type="number" id="expense-amount" min="1" required>
+          </div>
+
+          <button type="submit" class="btn btn-danger">
+            تسجيل المصروف
+          </button>
+
+          <p id="expense-message"></p>
+        </form>
+      </div>
+
+      <!-- Expenses List -->
+      <div id="expenses-container"></div>
+
+    </div>
+  </main>
+</div>
+
+<script type="module" src="js/expenses.js"></script>
+</body>
+</html>
